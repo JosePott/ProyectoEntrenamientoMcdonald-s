@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffc300 50%, #da291c 50%);
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: transparent;
+    padding: 20px 0;
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+}
+
+h1 {
+    margin: 0;
+    color: #da291c;
+    display: inline-block;
+}
+
+#points-container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.fries-logo {
+    width: 30px;
+    margin-left: 10px;
+}
+
+main {
+    margin: 20px 0;
+}
+
+.question-section {
+    background-color: #fff;
+    border: 2px solid #da291c;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.question-section h2 {
+    color: #da291c;
+}
+
+#options {
+    margin: 20px 0;
+}
+
+#options button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px 0;
+    background-color: #da291c;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#options button.correct {
+    animation: correctAnimation 1s forwards;
+}
+
+#options button.incorrect {
+    animation: incorrectAnimation 1s forwards;
+}
+
+@keyframes correctAnimation {
+    0% {
+        background-color: #da291c;
+    }
+    100% {
+        background-color: green;
+    }
+}
+
+@keyframes incorrectAnimation {
+    0% {
+        background-color: #da291c;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+#options button:hover {
+    background-color: #b52016;
+}
+
+.btn {
+    background-color: #da291c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.btn:hover {
+    background-color: #b52016;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+}
+
+#feedback {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#result-container {
+    display: none;
+    text-align: center;
+}
+
+#result-container img {
+    width: 200px;
+    margin: 20px 0;
+}
+
+#result-container .speech-bubble {
+    background: #fff;
+    border: 2px solid #da291c;
+    border-radius: .4em;
+    padding: 10px;
+    display: inline-block;
+    max-width: 200px;
+    margin: 20px auto;
+}
+
+#result-container .speech-bubble p {
+    margin: 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #options button {
+        width: 90%;
+    }
+
+    #result-container img {
+        width: 150px;
+    }
+}
