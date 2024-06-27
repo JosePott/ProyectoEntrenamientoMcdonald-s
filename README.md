@@ -1,0 +1,1 @@
+Este es un proyecto que he estado realizando de manera autodidacta debido a mi rol como entrenador en Mcdonald's Vitacura, con el busco poder enseñar procedimientos a mis compañeros de manera divertida e intuitiva, fomentando la libre competencia.
